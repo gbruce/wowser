@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: './bootstrapper',
+  devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'wowser-[hash].js'
